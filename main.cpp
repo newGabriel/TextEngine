@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+#include "scenario.hpp"
+
 using namespace std;
 
 int main(){
@@ -21,7 +23,10 @@ int main(){
         printf("%s ",word);
     }puts("");
 
-    ///TODO: inserir funções para manipulação de cenario 
+    fscanf(mainFile, " %s",word);
+
+    Scenario scenario = Scenario(word);
+    scenario.descrever(); 
     
     return 0;
 }
