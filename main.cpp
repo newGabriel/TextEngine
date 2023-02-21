@@ -5,6 +5,7 @@
 #include <string.h>
 
 #include "scenario.hpp"
+#include "maze.hpp"
 
 using namespace std;
 
@@ -25,8 +26,11 @@ int main(){
 
     fscanf(mainFile, " %s",word);
 
-    Scenario scenario = Scenario(word);
-    scenario.descrever(); 
+    // Scenario scenario = Scenario(word);
+    // scenario.descrever(); 
     
+    Maze maze = Maze(word);
+    maze.descrever();
+
     return 0;
 }
