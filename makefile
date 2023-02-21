@@ -1,10 +1,14 @@
 all:
 	mkdir -p bin
-	g++ -o bin/game scenario.cpp main.cpp
+	g++ -o bin/game scenario.cpp maze.cpp main.cpp
 
 scenario:
 	mkdir -p obj
 	g++ -c scenario.cpp
+
+maze:
+	mkdir -p obj
+	g++ -c maze.cpp
 
 main:
 	mkdir -p obj
@@ -12,6 +16,7 @@ main:
 
 Obj:
 	make scenario
+	make maze
 	make main
 
 clean:
