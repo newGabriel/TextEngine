@@ -26,8 +26,10 @@ class Maze{
 
     Maze(std::string mazeFile);
 
-    void descrever();
+    void describe();
     void printMaze();
+
+    void move(std::string destine);
 
     private:
 

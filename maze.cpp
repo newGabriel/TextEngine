@@ -26,7 +26,7 @@ Maze::Maze(std::string mazeFile){
     maze.close();
 }
 
-void Maze::descrever(){
+void Maze::describe(){
     printf("Saidas: %d\n",this->exits);
     printf("NPCs: %d\n",this->npc);
     printf("Itens: %d\n",this->itens);
@@ -60,6 +60,10 @@ void Maze::printMaze(){
             printf("%c ",j);
         }puts("");
     }
+}
+
+void Maze::move(std::string destine){
+    puts("testando");
 }
 
 void Maze::fillExits(std::ifstream &maze){

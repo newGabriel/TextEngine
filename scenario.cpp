@@ -23,9 +23,9 @@ Scenario::Scenario(std::string scenFile) {
   scen.close();
 }
 
-void Scenario::descrever() {
+void Scenario::describe() {
   printf("Saidas: %d\n", this->exits);
-  printf("Npcs: %d\n", this->exits);
+  printf("Npcs: %d\n", this->npc);
 
   std::cout << description << std::endl;
 

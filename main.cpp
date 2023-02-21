@@ -26,11 +26,11 @@ int main(){
 
     fscanf(mainFile, " %s",word);
 
-    // Scenario scenario = Scenario(word);
-    // scenario.descrever(); 
+    Scenario scenario = Scenario(word);
+    scenario.describe(); 
     
-    Maze maze = Maze(word);
-    maze.descrever();
+    // Maze maze = Maze(word);
+    // maze.describe();
 
     return 0;
 }

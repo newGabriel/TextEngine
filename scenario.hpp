@@ -15,7 +15,9 @@ class Scenario{
     
     Scenario(std::string scenFile);
 
-    void descrever();
+    void describe();
+
+    void move(std::string destine);
 
     private:
 
